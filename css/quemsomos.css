@@ -100,8 +100,8 @@ nav ul li a {
     display: flex;
     align-items: center;
     padding: 40px;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 35px;
+    font-size: 25px;
     margin-bottom: 50px;
 }
 
@@ -118,8 +118,8 @@ nav ul li a {
     display: flex;
     align-items: center;
     padding: 40px;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 35px;
+    font-size: 25px;
 }
 
 .seção2 p {

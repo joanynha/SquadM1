@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(252, 252, 252);
+    background-image: url();
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border: 5px rgb(0, 0, 0) solid;
+    border-style: double;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-top: 1.4px;
+    margin-left: 490px;
+    display: block;
+}
+
+body {
+    background-image: url("./bb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nome {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: -7%;
+    margin-left: 2%;
+    align-items: center;
+    font-size: 30px;
+    top: 100px;
+    width: 700px;
+    line-height: 30px;
+    height: 50px;
+    border: rgba(118, 21, 18, 0) 7px solid;
+    border-style: ridge;
+}
+
+.titulo {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 40%;
+    align-items: center;
+    font-size: 30px;
+    top: 100px;
+    width: 300px;
+    line-height: 50px;
+    height: 50px;
+    border: rgb(0, 0, 0) 1px solid;
+    border-style: ridge;
+}
+
+.conteudo {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 36%;
+    font-size: 18px;
+    top: 190px;
+    width: 400px;
+    line-height: 50px;
+    height: 360px;
+    border: rgb(0, 0, 0) 7px solid;
+    border-style: ridge;
+}
+
+.rodape {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    margin-top: 39%;
+    margin-left: 0%;
+    font-size: 15px;
+    top: 190px;
+    width: 1400px;
+    line-height: 30px;
+    height: 36px;
+}
+
+.label {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    margin-top: 49%;
+    margin-left: 0%;
+    font-size: 30px;
+    top: 190px;
+    width: 1400px;
+    line-height: 30px;
+    height: 36px;
+}
+
+input {
+    text-align: center;
+    line-height: 10px;
+}
+
+#msg {
+    text-align: center;
+    margin-right: 37px;
+    padding-bottom: 40px;
+}
+
+.oo {
+    text-align: center;
+    margin-right: 7px;
+}
+
+button {
+    text-align: center;
+    margin-left: 50px;
+}
