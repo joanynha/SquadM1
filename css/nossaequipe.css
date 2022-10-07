@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    font-family: "Oswald", monospace;
+}
+
+/* menu */
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: rgb(179, 141, 141);
+    transition: 0.5s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navlogo {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0.30)), url("banner3.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+/* nossa equipe */
+
+.titulo{
+    font-size: 35px;
+    width: 100%;
+    top: 30%;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.teamrow{
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.membro{
+    flex: 1 1 250px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    cursor: pointer;
+    max-width: 300px;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+.membro:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0.30)), url(nossaequipejoao.jpg);
+}
+
+.membro:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0.30)), url(nossaequipekiara.jpg);
+}
+
+.membro:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0.30)), url(nossaequipeian.jpg);
+}
+
+.membro:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0.30)), url(nossaequipemayara.jpg);
+}
+
+.membro:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-20px);
+}
+
+.membro img{
+    display: block;
+    width: 200px; height: 200px;
+    object-fit: cover;
+    border:4px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.membro h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 15px 0;
+    color: white;
+}
+
+.membro p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: white;
+}

@@ -11,6 +11,7 @@
 body {
     background-color: beige;
 }
+
 /* menu */
 
 nav {
@@ -32,7 +33,7 @@ nav ul li {
 nav ul li::after {
     content: '';
     height: 3px;
-    width: 0;
+    width: 0%;
     background: #009688;
     position: absolute;
     left: 0;
@@ -87,13 +88,14 @@ nav ul li a {
 
 .content {
     width: 100%;
-    top: 50%;
+    top: 45%;
     position: absolute;
     text-align: center;
     transform: translateY(-50%);
     text-align: center;
     color: white;
 }
+
 
 .content h1 {
     font-size: 70px;
@@ -111,44 +113,57 @@ nav ul li a {
     transition: 1s;
 }
 
+
+
 /* seção fotos */
 
 .foto1 {
     display: flex;
     align-items: center;
     padding: 50px;
-    margin-top: 100px;
+    margin: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0.30)), url("iniciosecao1.jpg");
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
 }
 
 .foto2 {
     display: flex;
     align-items: center;
     padding: 50px;
-    margin-top: 50px;
+    margin: 100px;
+    background-color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0.30)), url("iniciosecao2.jpg");
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
 }
 
 .foto1 img {
     width: 500px;
     height: 350px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    border: 5px solid rgb(97, 44, 44);
+    border: 5px solid rgb(14, 12, 12);
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .foto2 img {
     width: 500px;
     height: 350px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    border: 5px solid rgb(97, 44, 44);
+    border: 5px solid rgb(19, 17, 17);
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .foto1 p {
     font-size: 40px;
     padding: 50px;
+    color: white;
 }
 
 .foto2 p {
     font-size: 40px;
     padding: 50px;
+    color: white;
 }
 
 /* responsividade fotos */
@@ -166,108 +181,4 @@ nav ul li a {
     .foto2 p {
         padding: 50px;
     }
-}
-
-/* rodapé slider */
-
-.slider {
-    margin: 100px auto;
-    width: 1200px;
-    height: 500px;
-    overflow: hidden;
-}
-
-.slides {
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    position: relative;
-}
-
-.slide img {
-    width: 1200px;
-    height: 500px;
-}
-
-.navegaçãomanual {
-    position: absolute;
-    width: 1200px;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.manualbtn {
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manualbtn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manualbtn:hover {
-    background-color: white;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-
-.navegaçãoauto div{
-    border: 2px solid aquamarine;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navegaçãoauto {
-    position: absolute;
-    width: 1200px;
-    margin-top: 450px;
-    display: flex;
-    justify-content: center;
-}
-
-.navegaçãoauto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navegaçãoauto .navbtn {
-    background-color: white;
-}
-
-#radio2:checked ~ .navegaçãoauto .navbtn2 {
-    background-color: white;
-}
-
-#radio3:checked ~ .navegaçãoauto .navbtn3 {
-    background-color: white;
-}
-
-#radio4:checked ~ .navegaçãoauto .navbtn4 {
-    background-color: white;
 }

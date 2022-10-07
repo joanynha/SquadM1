@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/faleconosco.css">
+    <link rel="icon" type="image/x-icon" href="imagens/siteicon.svg">
+    <title>Fale Conosco</title>
+</head>
+
+<body>
+
+    <!-- menu -->
+
+    <header>
+        <div class="banner">
+          <nav>
+            <img class="navlogo" src="imagens/logo.png">
+            <ul class="navlinks">
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="trilhas.html">TRILHAS</a></li>
+              <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+              <li><a href="nossaequipe.html">NOSSA EQUIPE</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- formulário -->
+      
+    <div class="titulo">
+        FALE CONOSCO
+    </div>
+    <div class="conteudo">
+        <p>
+            <form action="/formulario-contato" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="texto" id="nome" name="nome_usuario">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email_usuario">
+                </div>
+                <div>
+                    <label for="texto">Mensagem:</label>
+                    <textarea id="texto" name="texto_usuario"></textarea>
+                </div>
+
+                <div class="button">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </p>
+        <p>Telefone: (21) 983013996</p>
+    </div>
+    
+    <div>
+        <footer class="rodape">
+            Copyright &#9400; 2016 J.K.I.M Trilhas - Todos os direitos reservados
+        </footer>
+    </div>
+
+</body>
+
+</html>

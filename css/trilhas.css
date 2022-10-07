@@ -10,6 +10,8 @@ body {
     background-color: beige;
 }
 
+/* menu */
+
 nav {
     width: 85%;
     margin: auto;
@@ -54,7 +56,7 @@ nav ul li a {
 .banner {
     width: 100%;
     height: 60vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0.30)), url("bannerteste2.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0.30)), url("banner4.jpg");
     background-size: cover;
     background-position: center;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -81,33 +83,35 @@ nav ul li a {
     cursor: pointer;
 }
 
+/* trilhas */
+
 .trilhas{display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    border-radius: 20px;
+    justify-content: space-between;
+    border-radius: 3px;
     width: 800px;
-    margin-left: 250px;
-    margin-top: 50px;
+    margin: 100px auto;
     align-items: center; 
     background-color: aliceblue;
-    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.13);
 }
 
 .trilhas img{
     width: 300px;
     height: 400px;
-    border-radius: 20px;
+    border-radius: 3px;
 }
 
 .trilhas .texto{
     font-size: 20px;
     text-align: center;
+    padding: 30px;
     width: 400px;
     text-shadow: 2px 2px 2px white;
 }
  .NomeDaTrilha{
-    font-size: 25px;
-    
+    font-size: 35px;
+    padding-bottom: 30px;
  }
 
 
